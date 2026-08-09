@@ -179,8 +179,9 @@ They are official source documents, not project assets. This project links to pu
 - [Security policy](SECURITY.md)
 - [Apache-2.0 license](LICENSE) and [notice](NOTICE)
 - [Citation metadata](CITATION.cff)
-- [Release verification template](docs/verification.md)
+- [Release verification record](docs/verification.md)
 - [v1.0.0 sanitized local verification evidence](docs/evidence/v1.0.0-local.md)
+- [v1.0.0 sanitized command log](docs/evidence/v1.0.0-command-log.md)
 - [v1.0.0 release notes](docs/releases/v1.0.0.md)
 
 ## Disclaimer
