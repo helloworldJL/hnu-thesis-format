@@ -33,7 +33,11 @@ Run from the repository root. Record the complete command, exit status, and a no
 
 The pytest suite creates synthetic DOCX files in pytest-managed temporary directories; it does not rely on a committed real-thesis fixture. If a repository command or fixture arrangement differs at release time, update this table to the exact executed command; do not silently omit the row.
 
+The sanitized local DOCX/PDF/HTML inspection log is published at [`docs/evidence/v1.0.0-local.md`](evidence/v1.0.0-local.md); private source artifacts and screenshots are intentionally not published.
+
 如果发布时仓库命令或 fixture 名称不同，请把本表改为实际执行的精确命令；不得静默省略条目。
+
+脱敏的本地 DOCX/PDF/HTML 检查日志见 [`docs/evidence/v1.0.0-local.md`](evidence/v1.0.0-local.md)；私密源产物与截图不会公开。
 
 ## Artifact inspection / 产物检查
 

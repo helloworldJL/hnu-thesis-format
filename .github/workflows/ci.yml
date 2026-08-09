@@ -10,7 +10,7 @@ jobs:
     name: ${{ matrix.os }} / Python ${{ matrix.python-version }}
     runs-on: ${{ matrix.os }}
     env:
-      PYTHONPYCACHEPREFIX: ${{ runner.temp }}/pycache
+      PYTHONPYCACHEPREFIX: /tmp/hnu-thesis-format-pycache
       PYTHONDONTWRITEBYTECODE: "1"
     strategy:
       fail-fast: false
