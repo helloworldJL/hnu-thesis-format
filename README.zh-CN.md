@@ -180,6 +180,7 @@ JSON 便于自动化处理，HTML 便于本地人工阅读。二者默认使用�
 - [Apache-2.0 许可证](LICENSE)与[声明](NOTICE)
 - [引用元数据](CITATION.cff)
 - [发布核验记录](docs/verification.md)
+- [v1.0.1 发布文档完整性修复说明](docs/releases/v1.0.1.md)
 - [v1.0.0 脱敏本地核验证据](docs/evidence/v1.0.0-local.md)
 - [v1.0.0 脱敏命令日志](docs/evidence/v1.0.0-command-log.md)
 - [v1.0.0 发布说明](docs/releases/v1.0.0.md)

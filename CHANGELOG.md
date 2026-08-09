@@ -2,6 +2,14 @@
 
 All notable changes to this project are documented in this file. The project follows [Semantic Versioning](https://semver.org/).
 
+## [1.0.1] - 2026-08-09
+
+### Documentation
+
+- Correct the sanitized synthetic smoke transcript to show the required `hnu-thesis-format` working directory for both Python module entry points.
+- Replace an inaccurate “no stdout” placeholder with the nine warning/info lines actually emitted by the validator during the recorded synthetic run.
+- No formatter, validator, rule, privacy, or command-line behavior changed.
+
 ## [1.0.0] - 2026-08-09
 
 ### Added
@@ -18,4 +26,5 @@ All notable changes to this project are documented in this file. The project fol
 - Formatting is limited to recognised paragraph types and positively recognised scholarly tables; pre-existing headers and complex/uncertain content remain for manual review.
 - Official source PDFs and official example documents are not bundled or redistributed.
 
+[1.0.1]: https://github.com/helloworldJL/hnu-thesis-format/releases/tag/v1.0.1
 [1.0.0]: https://github.com/helloworldJL/hnu-thesis-format/releases/tag/v1.0.0
