@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    name: ${{ matrix.os }} / Python ${{ matrix.python-version }}
+    runs-on: ${{ matrix.os }}
+    env:
+      PYTHONPYCACHEPREFIX: ${{ runner.temp }}/pycache
+      PYTHONDONTWRITEBYTECODE: "1"
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python-version: ["3.9", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install test dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r requirements-dev.txt
+      - name: Compile public Python
+        run: python -c "from pathlib import Path; [compile(path.read_text(encoding='utf-8'), str(path), 'exec') for root in ('hnu-thesis-format/scripts', 'tests') for path in Path(root).rglob('*.py')]"
+      - name: Lint public Python
+        run: python -m ruff check hnu-thesis-format/scripts tests
+      - name: Run automated tests
+        run: python -m pytest -q
+      - name: Run standalone release scan
+        run: python tests/release_scan.py
+      - name: Verify path-independent skill entry points
+        run: |
+          (cd hnu-thesis-format && python -m scripts.validate --help)
+          (cd hnu-thesis-format && python -m scripts.format_thesis --help)

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use hnu-thesis-format, please cite this software."
+title: "hnu-thesis-format"
+version: "1.0.0"
+date-released: 2026-08-09
+type: software
+license: Apache-2.0
+authors:
+  - name: "hnu-thesis-format contributors"
+repository-code: "https://github.com/helloworldJL/hnu-thesis-format"
+url: "https://github.com/helloworldJL/hnu-thesis-format"
+abstract: "A privacy-conscious local formatting and validation utility for the Hunan University academic doctoral dissertation workflow."

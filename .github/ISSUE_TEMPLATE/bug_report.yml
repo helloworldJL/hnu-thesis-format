@@ -1,0 +1,36 @@
+name: Bug report
+description: Report an unexpected behaviour using a synthetic document only.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not upload a real thesis, personal data, signatures, confidential material, or official PDF/template. If this may expose data or enable unsafe document handling, use SECURITY.md instead.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Explain the observed and expected behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Synthetic reproduction
+      description: Provide the command and a minimal, non-sensitive reproduction.
+      placeholder: |
+        python3 -m scripts.validate anonymous-thesis.docx --thesis-type academic_phd
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Project version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Python version, operating system, python-docx version, and Word renderer if relevant.

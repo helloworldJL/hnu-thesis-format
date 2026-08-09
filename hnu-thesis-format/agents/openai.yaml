@@ -1,0 +1,4 @@
+interface:
+  display_name: "HNU Doctoral Thesis Format"
+  short_description: "Format HNU doctoral dissertations safely"
+  default_prompt: "Use $hnu-thesis-format to format my HNU doctoral dissertation."

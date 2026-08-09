@@ -1,0 +1,28 @@
+name: Feature request
+description: Propose a safe, scoped improvement.
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include a real thesis, personal data, confidential information, or unredistributable official materials.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the workflow problem, not only a preferred implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed scope
+      description: State the expected outcome and manual-review boundary.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Rule source, if applicable
+      description: Link a public authoritative source and include a section/page locator. Do not attach official PDFs or templates without permission.
